@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Login</title>
+<style>
+   
+
+    html { 
+        background: url('/background.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+</head>
+<body Style="text-align:center; color:Seagreen;">
+<jsp:include page="/WEB-INF/view/components/admin-header.jsp" ></jsp:include>
+
+<br>
+<center>
+<h2> Welcome to SportyShoes</h2>
+<form name=frmLogin action="adminloginaction" method="post" style="">
+ <table border=1 cellspacing=2 cellpadding=4 style="border:solid;">
+ 	<tr style="text-align:center;">
+ 		<td width=25%>Admin id</td>
+ 		<td><input name=admin_id maxlength=20></td>
+ 	</tr>
+ 	<tr style="text-align:center;">
+ 		<td width=25%>Admin Password</td>
+ 		<td><input name=admin_pwd maxlength=10 type="password"></td>
+ 	</tr>
+ 	<tr style="text-align:center; color:seagreen;">
+ 		<td colspan=2>
+ 			<button>Login</button>
+ 		</td>
+ 	</tr>
+ </table>
+</form>
+</center>
+</body>
+</html>
